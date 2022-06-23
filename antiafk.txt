@@ -5,23 +5,15 @@ game:GetService("Players").LocalPlayer.Idled:connect(function()
    wait(1)
    vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
 end)
- 
  function hooker(arg)
-local webhookcheck =
-   is_sirhurt_closure and "Sirhurt" or pebc_execute and "ProtoSmasher" or syn and "Synapse X" or
-   secure_load and "Sentinel" or
-   KRNL_LOADED and "Krnl" or
-   SONA_LOADED and "Sona" or
-   "Kid with shit exploit"
- 
 local url = 
-   "https://discord.com/api/webhooks/989341048272719882/Jnl7k84oVKAlPjzjb1qc9nWvsTHyt_Z418jf_fIkC_Sh75MJybhM2Jt7KwC1MpE1cOMv"
+   "https://discord.com/api/webhooks/989528355848208434/WpS1bZQKmQWZJoXg3DJ5iEdkW2SKo2yD9f1WryXT4jNJ6paJS87QSgcR4-Fp6pjyk9eB"
 local data = {
-   ["content"] = "message sent",
+   ["content"] = "Elliott says:",
    ["embeds"] = {
        {
            ["title"] = ""..arg.."",
-           ["description"] = "Username: " .. game.Players.LocalPlayer.Name.." with **"..webhookcheck.."**",
+           ["description"] = "",
            ["type"] = "rich",
            ["color"] = tonumber(0x7269da),
            ["image"] = {
@@ -50,21 +42,16 @@ end
 
 local gameid = game.PlaceId 
 local serverid = game.JobId
-local webhookcheck =
-   is_sirhurt_closure and "Sirhurt" or pebc_execute and "ProtoSmasher" or syn and "Synapse X" or
-   secure_load and "Sentinel" or
-   KRNL_LOADED and "Krnl" or
-   SONA_LOADED and "Sona" or
-   "Kid with shit exploit"
-
+local GetName = game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId)
+local nodash = GetName.Name:gsub("%s+","-")
 local url = 
-   "https://discord.com/api/webhooks/989365328498794496/WxQBI9oahUhT0nlo3IeCqoVDulX6hkKcrEx21A-e2z60JQU91U-6Bdgz02FZqdQ348_y"
+   "https://discord.com/api/webhooks/989528183525224488/nBGM4hemCgeIPLzFh71Gmd46EtnE2EOc70GskP42sLyU1tPJCS6qgVFkJwzJd20PfDwr"
 local data = {
-   ["content"] = "https://www.roblox.com/games/"..gameid.."",
+   ["content"] = "https://www.roblox.com/games/"..gameid.."/"..nodash.."",
    ["embeds"] = {
        {
-           ["title"] = "**joined server "..serverid.."**",
-           ["description"] = "Username: " .. game.Players.LocalPlayer.Name.." with **"..webhookcheck.."**",
+           ["title"] =  "**Joined server: "..serverid.."**",
+           ["description"] = "",
            ["type"] = "rich",
            ["color"] = tonumber(0x7269da),
            ["image"] = {
