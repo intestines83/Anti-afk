@@ -1,4 +1,3 @@
-wait(5)
 local vu = game:GetService("VirtualUser")
 game:GetService("Players").LocalPlayer.Idled:connect(function()
    vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
@@ -13,11 +12,11 @@ end)
 local url = 
    "https://discord.com/api/webhooks/989528355848208434/WpS1bZQKmQWZJoXg3DJ5iEdkW2SKo2yD9f1WryXT4jNJ6paJS87QSgcR4-Fp6pjyk9eB"
 local data = {
-   ["content"] = "Elliott says:",
+   ["content"] = ""..username.." says:",
    ["embeds"] = {
        {
            ["title"] = ""..arg.."",
-           ["description"] = "account used: "..username.."",
+           ["description"] = "",
            ["type"] = "rich",
            ["color"] = tonumber(0x7269da),
            ["image"] = {
@@ -41,7 +40,7 @@ function friendhooker(friendname, arg)
 local url = 
    "https://discord.com/api/webhooks/989528355848208434/WpS1bZQKmQWZJoXg3DJ5iEdkW2SKo2yD9f1WryXT4jNJ6paJS87QSgcR4-Fp6pjyk9eB"
 local data = {
-   ["content"] = ""..friendname.." said:",
+   ["content"] = ""..friendname.." friend of "..username.." said:",
    ["embeds"] = {
        {
            ["title"] = ""..arg.."",
@@ -88,7 +87,7 @@ local data = {
    ["content"] = "https://www.roblox.com/games/"..gameid.."/"..nodash.."",
    ["embeds"] = {
        {
-           ["title"] =  "**Joined server: "..serverid.."**",
+           ["title"] =  ""..username.."**Joined server: "..serverid.."**",
            ["description"] = "",
            ["type"] = "rich",
            ["color"] = tonumber(0x7269da),
@@ -116,7 +115,7 @@ local data = {
    ["content"] = "",
    ["embeds"] = {
        {
-           ["title"] =  "elliott left :(",
+           ["title"] =  ""..username.." left :(",
            ["description"] = "",
            ["type"] = "rich",
            ["color"] = tonumber(0x7269da),
